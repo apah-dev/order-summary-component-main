@@ -41,6 +41,7 @@
         font-size: 1rem;
         background-image: url(images/pattern-background-desktop.svg);
         background-repeat: no-repeat;
+        background-size: contain;
       }
       main {
         display: flex;
@@ -111,6 +112,13 @@
         font-weight: 400;
       }
 
+      .annual-plan a:hover {
+        color: hsla(245, 75%, 52%, 0.6);
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
       button {
         background-color: var(--Brightblue);
         color: var(--white);
@@ -122,6 +130,12 @@
         box-shadow: 0rem 0.5rem 1rem 0.5rem hsla(245, 75%, 52%, 0.2);
       }
 
+      button:hover {
+        background-color: hsla(245, 75%, 52%, 0.6);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
       .cancel-order {
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -131,6 +145,12 @@
         text-decoration: none;
         color: var(--Desaturatedblue);
       }
+
+      .cancel-order a:hover {
+        color: black;
+        cursor: pointer;
+        transition: 0.2s;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -139,10 +159,12 @@
         color: hsl(228, 45%, 44%);
       }
 
-      @media (max-width: 700px) {
+      @media (max-width: 768px) {
         main {
-          width: 80%;
-          background-image: url(images/pattern-background-desktop.svg);
+          width: 350px;
+          background-image: url(images/pattern-background-mobile.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
         }
 
         p {
