@@ -17,166 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Order summary card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
-      :root {
-        --Paleblue: hsl(225, 100%, 94%);
-        --Brightblue: hsl(245, 75%, 52%);
-        --Verypaleblue: hsl(225, 100%, 98%);
-        --Desaturatedblue: hsl(224, 23%, 55%);
-        --Darkblue: hsl(223, 47%, 23%);
-        --white: white;
-      }
-      * {
-        font-family: "Red Hat Display", sans-serif;
-      }
-
-      body {
-        line-height: 1.5rem;
-        background-color: var(--Paleblue);
-        font-size: 1rem;
-        background-image: url(images/pattern-background-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      main {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 380px;
-        margin: 100px auto;
-        box-shadow: 0rem 1rem 1rem 1rem hsla(224, 23%, 55%, 0.2);
-        border-radius: 1rem;
-      }
-
-      .image-container {
-        margin-bottom: -1rem;
-      }
-
-      .music-image {
-        width: 100%;
-        border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
-      }
-
-      .description {
-        background-color: var(--white);
-        padding-left: 2rem;
-        padding-right: 2rem;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-      }
-
-      h1 {
-        text-align: center;
-        font-size: 1.5rem;
-        color: var(--Darkblue);
-      }
-
-      p {
-        color: var(--Desaturatedblue);
-      }
-
-      .annual-plan {
-        background-color: var(--Verypaleblue);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        border-radius: 1rem;
-        font-size: 0.9rem;
-        min-height: 5rem;
-      }
-
-      .annual {
-        width: 30%;
-        margin-left: -1rem;
-        margin-right: 2rem;
-      }
-
-      .music-icon {
-        margin-left: -1rem;
-      }
-      .annual p {
-        color: var(--Darkblue);
-        font-weight: 900;
-      }
-
-      .annual p span {
-        color: var(--Desaturatedblue);
-        font-weight: 400;
-      }
-
-      .annual-plan a:hover {
-        color: hsla(245, 75%, 52%, 0.6);
-        text-decoration: none;
-        cursor: pointer;
-        transition: 0.2s;
-      }
-
-      button {
-        background-color: var(--Brightblue);
-        color: var(--white);
-        padding: 1rem 3rem;
-        border: none;
-        border-radius: 0.5rem;
-        margin-top: 2rem;
-        width: 100%;
-        box-shadow: 0rem 0.5rem 1rem 0.5rem hsla(245, 75%, 52%, 0.2);
-      }
-
-      button:hover {
-        background-color: hsla(245, 75%, 52%, 0.6);
-        cursor: pointer;
-        transition: 0.2s;
-      }
-
-      .cancel-order {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-      }
-
-      .cancel-order a {
-        text-decoration: none;
-        color: var(--Desaturatedblue);
-      }
-
-      .cancel-order a:hover {
-        color: black;
-        cursor: pointer;
-        transition: 0.2s;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
-      @media (max-width: 768px) {
-        main {
-          width: 350px;
-          background-image: url(images/pattern-background-mobile.svg);
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-
-        p {
-          font-size: 0.8rem;
-        }
-
-        body {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -202,7 +47,7 @@
           <div class="annual">
             <p>Annual Plan <span>$59.99/year</span></p>
           </div>
-          <a href="#">Change</a>
+          <a href="#" target="_blank">Change</a>
         </div>
 
         <div class="payment-button">
@@ -210,16 +55,18 @@
         </div>
 
         <div class="cancel-order">
-          <a href="#">Cancel Order</a>
+          <a href="#" target="_blank">Cancel Order</a>
         </div>
       </div>
     </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Apah Benson</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Apah Benson</a>.
+      </div>
+    </footer>
   </body>
 </html>
